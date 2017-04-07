@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "avatar",
+      "type": "blobTrigger",
+      "dataType": "binary",
+      "direction": "in",
+      "path": "avatar-input/{filename}.jpg",
+      "connection": "nasahackstore_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "faceTable",
+      "tableName": "faces",
+      "connection": "nasahackstore_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
